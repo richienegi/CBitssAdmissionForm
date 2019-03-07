@@ -41,7 +41,7 @@ sp=(StateProgressBar)findViewById(R.id.your_state_progress_bar_id);
 
 information i=new information();
 
-        getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.enter, R.anim.exit).replace(R.id.ll1,i).addToBackStack(null).commit();
+        getSupportFragmentManager().beginTransaction()/*.setCustomAnimations(R.anim.enter, R.anim.exit)*/.replace(R.id.ll1,i).addToBackStack(null).commit();
 
 
 
