@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".information">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="INFORMATION: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/firstname"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="* First Name"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/midname"
+                        android:inputType="text"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Middle Name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/lastname"
+                        android:inputType="text"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="* Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_marginEnd="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:layout_marginLeft="6dp"
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textSize="16dp" />
+                </RadioGroup>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginStart="120dp"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/dateOfBirth"
+                        android:inputType="text"
+                        android:editable="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/datepicker"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="* Date Of Birth" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Ffirstname"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="* Father's First Name"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Fmidname"
+                        android:inputType="text"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Father's Middle Name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Flastname"
+                        android:inputType="text"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Father's Last Name" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Mfirstname"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="* Mother's First Name"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Mmidname"
+                        android:inputType="text"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Mother's Middle Name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/Mlastname"
+                        android:inputType="text"
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Mother's Last Name" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/button"
+                android:text="NEXT" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

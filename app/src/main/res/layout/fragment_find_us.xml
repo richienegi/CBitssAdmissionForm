@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".findUs">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="* How Did you Find Us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:button="@drawable/checkbox"
+                    android:layout_marginLeft="100dp"
+                    android:id="@+id/facebook"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook" />
+                <CheckBox
+                    android:button="@drawable/checkbox"
+                    android:layout_marginLeft="80dp"
+                    android:id="@+id/google"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google" />
+
+                <CheckBox
+                    android:button="@drawable/checkbox"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="80dp"
+                    android:id="@+id/reference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="refrence"
+                    android:checked="false"
+                     />
+
+
+                <CheckBox
+                    android:button="@drawable/checkbox"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="80dp"
+                    android:id="@+id/Other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other "
+                    android:checked="false"
+                   />
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:text="* Please select your course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#e91207"
+                android:text="Accounting Courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/chechablelist1"
+                android:layout_width="300dp"
+                android:layout_height="360dp"></ListView>
+
+            <TextView
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#e91207"
+                android:text="Marketing_Courses "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/chechablelist2"
+                android:layout_width="300dp"
+                android:layout_height="190dp"></ListView>
+
+            <TextView
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#e91207"
+                android:text="IT Courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/chechablelist3"
+                android:layout_width="300dp"
+                android:layout_height="640dp"></ListView>
+
+
+
+
+            <TextView
+                android:textSize="20dp"
+                android:textColor="#e91207"
+                android:textStyle="bold"
+                android:text="Soft Skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/chechablelist4"
+                android:layout_width="300dp"
+                android:layout_height="200dp"></ListView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="I Admit that"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:textSize="16dp"
+                android:text="*There is no job guarantee after completion of course.\n
+        *Completion certificate will be issued to me only if, i clear the exam conducted by the company at the end of training.\n
+    *paid is not refundable in any case.\n
+        * All above written information about me is true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/button"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

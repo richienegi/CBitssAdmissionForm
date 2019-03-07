@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CBitssAdmissionForm</string>
+    <string name="verify">Either check your number or please enter valid otp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
